@@ -1,0 +1,10 @@
+{
+  "extName" : {
+    "message" : "Replace with [Images]",
+    "description" : "Extension name"
+  },
+  "extDescription" : {
+    "message" : "Replace images on all pages with [Images]",
+    "description" : "Extension description"
+  }
+}
