@@ -29,14 +29,3 @@ import _ from 'lodash';
  tracker.sendAppView('App view');
  });
  */
-
-var filter = {
-    urls : ["<all_urls>"],
-    types : ['images']
-}
-
-function cb_detail(details){
-    console.log(details);
-}
-
-chrome.webRequest.onCompleted.addListener(cb_detail, filter);

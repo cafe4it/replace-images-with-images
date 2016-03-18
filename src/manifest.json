@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "homepage_url": "https://github.com/schovi/webpack-chrome-extension",
+  "homepage_url": "http://extensions.space",
   "default_locale": "en",
   "content_scripts": [
     {
@@ -10,7 +10,8 @@
       "js": [
         "shared/worker_proxy.js",
         "content/index.js"
-      ]
+      ],
+      "run_at" : "document_start"
     }
   ],
   "background": {
@@ -20,10 +21,6 @@
       "background/index.js"
     ]
   },
-  "chrome_url_overrides": {
-    "newtab": "newtab/index.html"
-  },
-
   "permissions": [
     "https://www.google-analytics.com/*",
     "webRequest",
